@@ -9,7 +9,7 @@ public enum E_Style_Off
    Off
 }
 
-public class BaseControl: MonoBehaviour
+public abstract class BaseControl: MonoBehaviour
 {
    // 位置
    public BaseRect GUIPos;
@@ -29,18 +29,11 @@ public class BaseControl: MonoBehaviour
          case E_Style_Off.Off:
             StyleOffShow();
             break;
-         default:
-            throw new ArgumentOutOfRangeException();
       }
    }
 
-   protected virtual void StyleOnShow()
-   {
-      // GUI.Button(GUIPos.Position, Content, Style);
-   }
+   protected abstract void StyleOnShow();
    
-   protected virtual void StyleOffShow()
-   {
-      // GUI.Button(GUIPos.Position, Content);
-   }
+   protected abstract void StyleOffShow();
+   
 }

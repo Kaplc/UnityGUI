@@ -11,16 +11,16 @@ public class GUIRoot : MonoBehaviour
     void Start()
     {
         // 获取子对象的脚本
-        _controls = this.GetComponents<BaseControl>();
+        _controls = this.GetComponentsInChildren<BaseControl>();
     }
 
     // Update is called once per frame
-    void Update()
+    void OnGUI()
     {
         // 运行时不获取子对象的脚本
         if (!Application.isPlaying)
         {
-            _controls = this.GetComponents<BaseControl>();
+            _controls = this.GetComponentsInChildren<BaseControl>();
         }
 
         for (int i = 0; i < _controls.Length; i++)

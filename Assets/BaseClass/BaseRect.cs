@@ -106,39 +106,39 @@ public class BaseRect
             case E_Alignment_Type.Up:
                 // 屏幕偏移+控件偏移+自定义偏移
                 _pos.x = Screen.width / 2 + centerPos.x + OffSetPos.x;
-                _pos.y = 0 + centerPos.y + OffSetPos.y;
+                _pos.y = 0 + centerPos.y - OffSetPos.y;
                 break;
             case E_Alignment_Type.Down:
                 _pos.x = Screen.width / 2 + centerPos.x + OffSetPos.x;
-                _pos.y = Screen.height + centerPos.y + OffSetPos.y;
+                _pos.y = Screen.height + centerPos.y - OffSetPos.y;
                 break;
             case E_Alignment_Type.Left:
                 _pos.x = 0 + centerPos.x + OffSetPos.x;
-                _pos.y = Screen.height / 2 + centerPos.y + OffSetPos.y;
+                _pos.y = Screen.height / 2 + centerPos.y - OffSetPos.y;
                 break;
             case E_Alignment_Type.Right:
                 _pos.x = Screen.width + centerPos.x + OffSetPos.x;
-                _pos.y = Screen.height / 2 + centerPos.y + OffSetPos.y;
+                _pos.y = Screen.height / 2 + centerPos.y - OffSetPos.y;
                 break;
             case E_Alignment_Type.Center:
                 _pos.x = Screen.width / 2 + centerPos.x + OffSetPos.x;
-                _pos.y = Screen.height / 2 + centerPos.y + OffSetPos.y;
+                _pos.y = Screen.height / 2 + centerPos.y - OffSetPos.y;
                 break;
             case E_Alignment_Type.LeftUp:
                 _pos.x = 0 + centerPos.x + OffSetPos.x;
-                _pos.y = 0 + centerPos.y + OffSetPos.y;
+                _pos.y = 0 + centerPos.y - OffSetPos.y;
                 break;
             case E_Alignment_Type.LeftDown:
                 _pos.x = 0 + centerPos.x + OffSetPos.x;
-                _pos.y = Screen.height + centerPos.y + OffSetPos.y;
+                _pos.y = Screen.height + centerPos.y - OffSetPos.y;
                 break;
             case E_Alignment_Type.RightUp:
                 _pos.x = Screen.width + centerPos.x + OffSetPos.x;
-                _pos.y = 0 + centerPos.y + OffSetPos.y;
+                _pos.y = 0 + centerPos.y - OffSetPos.y;
                 break;
             case E_Alignment_Type.RightDown:
                 _pos.x = Screen.width + centerPos.x + OffSetPos.x;
-                _pos.y = Screen.height + centerPos.y + OffSetPos.y;
+                _pos.y = Screen.height + centerPos.y - OffSetPos.y;
                 break;
         }
     }
