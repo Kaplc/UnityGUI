@@ -18,8 +18,8 @@ public class BaseControl: MonoBehaviour
    // 自定义样式开关
    public E_Style_Off StyleOnOrOff = E_Style_Off.Off;
    public GUIStyle Style;
-
-   private void OnGUI()
+   
+   public void Draw()
    {
       switch (StyleOnOrOff)
       {
@@ -36,11 +36,11 @@ public class BaseControl: MonoBehaviour
 
    protected virtual void StyleOnShow()
    {
-      GUI.Button(GUIPos.Position, Content, Style);
+      // GUI.Button(GUIPos.Position, Content, Style);
    }
    
    protected virtual void StyleOffShow()
    {
-      GUI.Button(GUIPos.Position, Content);
+      // GUI.Button(GUIPos.Position, Content);
    }
 }
