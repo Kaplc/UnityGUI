@@ -47,8 +47,8 @@ MonoBehaviour:
     ScreenAlignmentType: 4
     ControlCenterAlignmentType: 4
     OffSetPos: {x: 0, y: 0}
-    Width: 100
-    Height: 50
+    Width: 50
+    Height: 30
   Content:
     m_Text: 
     m_Image: {fileID: 0}

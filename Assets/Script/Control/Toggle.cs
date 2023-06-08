@@ -26,7 +26,7 @@ public class Toggle : BaseControl
         isSel = GUI.Toggle(GUIPos.Position, isSel, Content);
         if (isOldSel != isSel)
         {
-            changeValue?.Invoke(isSel); // isSel传参给委托中的每个函数,通知所有订阅changeValue事件的方法，isSel的值已经发生了变化，以便它们可以采取相应的操作或逻辑
+            changeValue?.Invoke(isSel);
             isOldSel = isSel;
         }
     }
