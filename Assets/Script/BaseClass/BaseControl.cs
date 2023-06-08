@@ -14,7 +14,7 @@ public abstract class BaseControl: MonoBehaviour
    // 位置
    public BaseRect GUIPos;
    // 内容
-   public GUIContent Content;
+   public GUIContent Content = new GUIContent();
    // 自定义样式开关
    public E_Style_Off StyleOnOrOff = E_Style_Off.Off;
    public GUIStyle Style;
